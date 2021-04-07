@@ -36,14 +36,28 @@
       }
 
       footer{
-       margin-top:12% !important;
+       margin-top:20% !important;
        margin-right:-12% !important;
      }
 
+    
 
 }    
 
-     @media only screen and (min-width: 500px) {
+@media only screen and (min-width:500px) {
+  #content{
+    height: 700px;
+  }
+
+  
+
+  footer{
+       margin-top:10% !important;
+       /* margin-right:-12% !important; */
+     }
+}
+
+     @media only screen and (min-width: 900px) {
 
        #content{
       width: 1020px;
@@ -54,7 +68,15 @@
         width: 400px;
       }
 
-     
+     .availability{
+       display: none;
+     }
+
+
+     footer{
+       margin-top:4% !important;
+       /* margin-right:-12% !important; */
+     }
 }
 	
   #content{
@@ -104,7 +126,7 @@
             <input type="button" value="Clear All" onClick="window.location.reload();" style="color: black;" >
     </form>
     <canvas id="myCanvas" ></canvas>
-    
+    <center><span class="availability">This game only works on PC</span></center>
     <center><a type="button" href="theme.html" class="btn btn-outline-secondary" style="margin-top: 1%;" >Back to themes</a></center>
   </div>
  </main>
