@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  color: #d9d9d9;
+  color:white;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
@@ -15,12 +15,12 @@
 .content1 .text{
   font-size: 2.5rem;
   font-weight: 600;
-  color: #202020;
+  color: #ffffff;
 }
 .content1 .p{
   font-size: 2.1875rem;
   font-weight: 600;
-  color: #202020;
+  color: #ffffff;
 }
 footer{
   position: relative;
@@ -107,7 +107,7 @@ footer{
 .right form .text{
   font-size: 1.0625rem;
   margin-bottom: 2px;
-  color: #656565;
+  color: #ffffff;
 }
 .right form .msg{
   margin-top: 10px;

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <base target="_top">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TEDxDYPATILUNIVERSITY</title>
@@ -19,12 +20,12 @@
  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script type="text/javascript">
     (function() {
         emailjs.init("user_e9z13sDfOQiTbCPF5SxpR");
             })();
-</script>
+</script> -->
 
 
 <style type="text/css">
@@ -219,15 +220,15 @@ input::-webkit-inner-spin-button {
             
     </form> -->
          
-      <form  id="myForm" autocomplete="off">
-      <h4 class="sent-notification"></h4>
+      <form  class="gform" autocomplete="off" method="POST" data-emai="patushir@gmail.com" action="https://script.google.com/macros/s/AKfycbzWTKFD8w_bCKq_qHPoZBXg8NXPffcw3lC9cI0SVWQJIOrMrMwpLMtGuky0C66vrzJNxw/exec">
+      <!-- <h4 class="sent-notification"></h4> -->
         <div class="row" >
        
 
       <div class="col" >
       <div class="wrapper">
       <div class="input_field">
-        <input id="name" type="text" required>
+        <input id="Name" name="Name" type="text" required>
         <div class="underline"></div>
 <label>Full Name<span style="color: red;">*</span></label>
       </div>
@@ -239,7 +240,7 @@ input::-webkit-inner-spin-button {
     <div class="col" >
       <div class="wrapper">
       <div class="input_field">
-        <input type="text" id="phone" required>
+        <input type="text" id="Mobile Number" name="Mobile Number" required>
         <div class="underline">
 </div>
 <label>Phone Number<span style="color: red;">*</span></label>
@@ -252,7 +253,7 @@ input::-webkit-inner-spin-button {
   <div class="col" >
       <div class="wrapper">
       <div class="input_field">
-      <input id="email" type="text" required>
+      <input id="Email ID" name="Email ID"type="text" required>
         <div class="underline">
 </div>
 <label>Mail Id<span style="color: red;">*</span></label>
@@ -266,7 +267,7 @@ input::-webkit-inner-spin-button {
   <div class="col" >
       <div class="wrapper">
       <div class="input_field">
-        <input type="textarea"  rows="4" id="body" required>
+        <input type="textarea" id="Message" name="Message" rows="4" id="body" required>
         <div class="underline">
 </div>
 <label>Message<span style="color: red;">*</span></label>
@@ -276,7 +277,7 @@ input::-webkit-inner-spin-button {
 </div>
 
 
-<a href="https://linktr.ee/tedxdypatilu" ><button type="button" class="btn btn-outline-secondary submit-button" style="margin-top: 2%;background-color: red;color: white;" >Submit</button></a>
+<button type="submit" class="btn btn-outline-secondary submit-button" style="margin-top: 2%;background-color: red;color: white;" >Submit</button>
 
 
 </form> 
@@ -399,37 +400,37 @@ input::-webkit-inner-spin-button {
 
 
 
-function sendEmail() {
-            var name = $("#name");
-            var email = $("#email");
-            var phone = $("#phone");
-            var body = $("#body");
+// function sendEmail() {
+//             var name = $("#name");
+//             var email = $("#email");
+//             var phone = $("#phone");
+//             var body = $("#body");
 
-            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(phone) && isNotEmpty(body)) {
-                $.ajax({
-                   url: 'sendEmail.php',
-                   method: 'POST',
-                   dataType: 'json',
-                   data: {
-                       name: name.val(),
-                       email: email.val(),
-                       phone: phone.val(),
-                       body: body.val()
-                   }, success: function (response) {
-                    // $('#myForm')[0].reset();
-                        $('.sent-notification').text("Message Sent Successfully.");
+//             if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(phone) && isNotEmpty(body)) {
+//                 $.ajax({
+//                    url: 'sendEmail.php',
+//                    method: 'POST',
+//                    dataType: 'json',
+//                    data: {
+//                        name: name.val(),
+//                        email: email.val(),
+//                        phone: phone.val(),
+//                        body: body.val()
+//                    }, success: function (response) {
+//                     // $('#myForm')[0].reset();
+//                         $('.sent-notification').text("Message Sent Successfully.");
                   
-                   }
-                });
-            }
-        }
+//                    }
+//                 });
+//             }
+//         }
 
-        function isNotEmpty(caller) {
-            if (caller.val() == "") {
-                return false;
-            } else
-            return true;
-        }
+//         function isNotEmpty(caller) {
+//             if (caller.val() == "") {
+//                 return false;
+//             } else
+//             return true;
+//         }
 
 //         function validateForm() {
 //   var x = document.forms["#myForm"]["#name"].value;
