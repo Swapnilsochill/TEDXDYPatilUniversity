@@ -1,5 +1,6 @@
-* {
+header {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     align-items: center;
     background-color: #000;
     width: 100%;
+    font-weight: 550;
 }
 
 .brand-title {
