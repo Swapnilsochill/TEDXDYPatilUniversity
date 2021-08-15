@@ -16,65 +16,60 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
+  
 
-
+  <link rel= "stylesheet" href = "css/style.scss">
 <style type="text/css">
   body{
     background-color: black;
   }
+	.img{
+        width: 100%;
+        height: auto;
+      }
 
-  @font-face{
-    font-family: Life;
-    src:url(Fonts/Life.ttf);
-  }
 
-	.container-fluid {
-  position: relative;
-  width: 100%;
-}
+   
+   
+    @media only screen and (min-width: 1200px) {
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+      .secondrow{
+        margin-left: 26%;
+        margin-top: 1%;
+        position: relative;
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.7;
-  transition: .5s ease;
-  background-color: red;
-}
+      }
 
-.container-fluid:hover .overlay {
-  opacity: 0;
-  transition: 0.2s;
-  display: none;
-}
+       .card{
+      width: 107%;
+      height: 365px;
+    }
 
-.theme {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+      .vai{
+        width: 110%;
+      }
 
-/* hero section begin */
+    }
+       @media only screen and (max-width: 400px) {
+
+      
+
+       .card{
+      width: 90%;
+      height: 365px;
+      margin-left: 6%;
+    }
+        
+       .secondrow{
+        margin-left: -2%;
+
+      }
+    }
+    /* hero section begin */
 .hero-section {
-  background: url("Images/Tedhero.jpg") 50% no-repeat;
+  /* background: url("Images/Tedhero.jpg") 50% no-repeat; */
   background-size: cover;
-  height: 60vh;
+  height: 40vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -85,12 +80,18 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 12.5% 1%;
 }
 
 .hero-section h1{
-    font-size: 3.5rem;
+
+    font-size: 5.5rem;
+    font-weight: 350;
   }
- 
+  .hero-section h5{
+    font-size: 2rem;
+    
+  }
 
 .hero-section .hero-section-text {
   color: #fefefe;
@@ -107,6 +108,7 @@
   .newtheme{
     height: 400px;
   }
+  
 }
 
 
@@ -118,8 +120,192 @@
   .newtheme{
     height: 200px;
   }
+  .hero-section h1{
+
+font-size: 2.5rem;
+
 }
+.hero-section h5{
+font-size: 1rem;
+
+}
+}
+
+/* blog cards begin */
+:root{
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+} */
+
+/* body{
+  height: 100%;
+} */
+
+.bcardhero-section{
+  align-items: flex-start;
+  background-color:black;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 5% 0%;
+
+}
+
+.bcard-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+  grid-column-gap: 4rem;
+  grid-row-gap: var(--spacing-l);
+  /* max-width: var(--width-container); */
+  width: 70%;
+ 
+}
+
+@media(min-width: 700px){
+  .bcard-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media(min-width: 900px){
+  .bcard-grid{
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media(min-width: 1400px){
+  .bcard-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.bcard{
+  list-style: none;
+  position: relative;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+  /* align-items: center; */
+  
+}
+
+.bcard:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+  background-color: black ;
+  
+}
+
+.bcard__background{
+  
+  background-color: #0a0a0a;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-m);
+  bottom: 0;
+  /* filter: brightness(1.0) saturate(1.0) contrast(1); */
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+  
+}
+
+.bcard:hover .bcard__background{
+  transform: scale(1.05) translateZ(0);
+  border-radius: var(--spacing-m);
+  
+}
+
+
+.bcard__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+  
+  
+}
+
+.bcard__category{
+  /* color: var(--text-light); */
+  font-size: 1rem;
+  margin-bottom: var(--spacing-s);
+  /* text-transform: uppercase; */
+  color: white;
+  
+}
+
+.bcard__heading{
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+/*   word-spacing: 100vw; */
+}
+
+/* BUTTON CSS STARTS */
+
+.custom-btn {
+  
+  padding: 10px 25px;
+ 
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+}
+/**** BTN No. 1 ****/
+.btn-1 {
+  border-radius: 7px;
+  background: #000;
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.btn-1:hover {
+  background: #000;
+  color: red;
+}
+.btn-1:active {
+  top: 2px;
+}
+
 </style>
+
 
 <header>
    <nav class="navbar" style="position: sticky;" >
@@ -145,46 +331,87 @@
       </nav>
  </header>
 
- <main>
- 	
-      <!-- <div class="container-fluid newtheme " style="background-color: white;">
-      <div class="container-fluid" style="align-items: center;text-align: center;display: flex;justify-content: center;flex-direction: column;top: 20%;" >
-      <h1 class="Theme" style="color: black;font-family:Life;">THEME FOR 2021</h1>
-      <h2 style="color: black;font-family:Life; " >COMING SOON</h2>
-      </div>
-     </div> -->
-     <div class="hero-section">
-      <div class="hero-section-text">
-        <h1>COMING SOON</h1>
-        <h5>Theme 2021</h5>
-      </div>
-    </div>
-    
-    
-   
-
-<div class="row" style="background-color: black;height: 15px;" ></div>
-<div class="container-fluid">
-  <img src="Images/BC.png" alt="Avatar" class="image">
-  <a class="btn btn-outline-secondary" href="blankcanvas.html" style="margin-top: 2%;position: absolute;top: 70%;">Play now</a>
-  <div class="overlay">
-    <div class="text fw-normal theme" style="font-size: 5vw;font-family:'Spartan', sans-serif;" >THEME FOR 2019</div>
+<main>
+  <span id="hideat1026">
+  <div class="hero-section" >
+    <img src="Images/hero blog.png" alt="" style="width: 100%;
+    height: auto;">
+  </div>
+</span>
+   <div class="hero-section" style="background: none;">
+  <div class="hero-section-text">
+    <h1>YOUR WEEKLY</h1>
+    <h1>CONTEMPLATION</h1>
+    <br>
+    <br>
+    <h5 style="background-color: #1E1E1E;
+    padding: 2%;">TEDxDYPatilUniversity Blog</h5>
   </div>
 </div>
+<!-- BLOG CARDS BEGIN -->
+<span>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 
-<div class="row" style="background-color: black;height: 15px;" ></div>
+  <section class="bcardhero-section">
+    <div class="bcard-grid">
+      <a class="bcard" href="blogs/article1.html">
+        <div class="bcard__background" style="background-image: url(Images/yellow\ two.png)"></div>
+        <div class="bcard__content">
+          <p class =" bcard__category">Aug 14 2021</p>
+          <p class =" bcard__category">Kirti Agarwal</p>
+          <h3 class="bcard__heading">Calling All Thinkers</h3>
+          <br><br><br><br><br><br>
+          <button class="custom-btn btn-1">Read More</button>
+          
+          
+        </div>
+      </a>
+      <!-- <a class="bcard" href="#">
+        <div class="bcard__background" style="background-image: url(Images/under-construction-symbols-grunge-style-with-yellow-background-it-GFRA3H.jpg)"></div>
+        <div class="bcard__content">
+          
+          <p class =" bcard__category">Aug 14 2021</p>
+          <p class =" bcard__category">Kirti Agarwal</p>
+          <h3 class="bcard__heading">Calling All Thinkers</h3>
+          <br><br><br><br><br><br>
+          <button class="custom-btn btn-1">Read More</button>
+          
+          
+        </div>
+      </a>
+      <a class="bcard" href="#">
+        <div class="bcard__background" style="background-image: url(Images/cv.jpg)"></div>
+        <div class="bcard__content">
+          
+          <h3 class="bcard__heading">Lorem ipsum dolor sit amet</h3>
+          <br><br><br><br><br><br>
+          <button class="custom-btn btn-1">Read More</button>
+          
+          
+        </div>
+      </a>
+      <a class="bcard" href="#">
+        <div class="bcard__background" style="background-image: url(Images/cv.jpg)"></div>
+        <div class="bcard__content">
+          
+          <h3 class="bcard__heading">Lorem ipsum dolor sit amet</h3>
+          <br><br><br><br><br><br>
+          <button class="custom-btn btn-1">Read More</button>
+          
+          
+        </div>
+      </a> -->
+    <div>
+  </section>
+</span>
 
-  <div class="container-fluid">
-  <img src="Images/NB.png" alt="Avatar" class="image">
-  <a class="btn btn-outline-secondary" href="snake.html" style="margin-top: 2%;position: absolute;top: 70%;">Play now</a>
-  <div class="overlay">
-    <div class="text fw-normal theme" style="font-size: 5vw;font-family:'Spartan', sans-serif;" >THEME FOR 2018</div>
-  </div>
-</div>
+</main>
+ 
 
-  </div>
- </main>
+  
+  
 
+<span class="foooter">
  <footer style="bottom: 0;" >
   <div class="main-content">
     <div class="left box">
@@ -261,7 +488,7 @@
     </center>
   </div>
  </footer>
-
+</span>
  	<script type="text/javascript">
 	$(document).ready(function(){
   $(".toggle-button").click(function(){

@@ -5,7 +5,7 @@
 
 /* hero section begin */
 .hero-section {
-background: url("../Images/speakerhero.jpg") 50% no-repeat;
+  
 background-size: cover;
 height: 60vh;
 text-align: center;
@@ -360,3 +360,35 @@ body {
     opacity: 1;
   }
 }
+// blog hero
+.hero-blog {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background-size: cover;
+  // background-color: yellow;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-blog-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+@media (max-width: 1026px) {
+  #hideat1026 {
+      display: none;
+  }
+}
+// blog hero ends
+

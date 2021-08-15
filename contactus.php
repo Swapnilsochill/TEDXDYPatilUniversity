@@ -19,17 +19,13 @@
  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function() {
-        emailjs.init("user_e9z13sDfOQiTbCPF5SxpR");
-            })();
-</script>
+
 
 
 <style type="text/css">
   body{
   background-color: black;
+  color:white !important;
 }
 
   textarea{
@@ -145,6 +141,10 @@ input::-webkit-inner-spin-button {
   color: white;
 }
 
+.container-fluid {
+  color:white !important; 
+}
+
 
 
 </style>
@@ -181,7 +181,7 @@ input::-webkit-inner-spin-button {
       <div class="row text-center justify-content-center">
               <i class="fa fa-envelope" style="font-size:48px;color:red"></i>
               <br>
-              <div class="container-fluid" >
+              <div class="container-fluid"  >
               <h4 class="font-weight-30" style="margin-top: 2%;">
               info.tedx@dypatil.edu
               </h4>
@@ -348,7 +348,7 @@ input::-webkit-inner-spin-button {
               <!-- <span class="fas fa-phone-alt"></span>
               <span class="text">IT Department, DY Patil University: +91 7276880013</span> -->
             </div>
-            <div class="email">
+            <div class="email" >
               <table>
               <tr>
                 <td rowspan=2> <span class="fas fa-envelope"></span></td>
