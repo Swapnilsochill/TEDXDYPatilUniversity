@@ -32,11 +32,11 @@ display: flex;
  color: #fff;
 text-shadow: 1px 1px 2px #0a0a0a;
 }
-//the X
+/* //the X */
 .letter-x {
   color: red !important;
 }
-//speaker title 
+/* //speaker title  */
 .speaker-title{
 padding: 0;
 }
@@ -51,8 +51,8 @@ color: #fff;
 text-shadow: 1px 1px 2px #0a0a0a;
 }
 
-
-//Cards
+/* 
+//Cards */
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
 :root {
   --d: 700ms;
@@ -76,7 +76,7 @@ body {
 }
 .page-content {
   
-  // box-sizing: border-box;
+  /* // box-sizing: border-box; */
   display: grid;
   place-items: center;
  
@@ -109,7 +109,7 @@ body {
   border-radius: 5px;
   color: whitesmoke;
   background-color: whitesmoke;
-  // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  /* // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1); */
 }
 @media (min-width: 600px) {
   .card {
@@ -142,7 +142,7 @@ body {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
-// .card:nth-child(1):before {
+/* // .card:nth-child(1):before {
 //   background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832588213708259328/TB.jpg);
 // }
 // .card:nth-child(2):before {
@@ -162,7 +162,7 @@ body {
 // }
 // .card:nth-child(7):before {
 //   background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832598826895540304/AK.jpg);
-// }
+// } */
 
 .content-card{
   position: relative;
@@ -175,7 +175,7 @@ body {
   z-index: 1;
 }
 .content-card > * + * {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .title {
@@ -185,12 +185,12 @@ body {
   
 }
 
-// .copy {
+/* // .copy {
 //   font-family: var(--font-serif);
 //   font-size: 1vw;
 //   font-style: italic;
 //   line-height: 1.35;
-// }
+// } */
 
 .btn {
   cursor: pointer;
@@ -259,10 +259,10 @@ body {
     transition-duration: 0s;
   }
 }
-//card ends
+/* //card ends */
 
 
-//speaker page title starts 
+/* //speaker page title starts 
 
 // container-title {
 //   width: 100%;
@@ -273,7 +273,7 @@ body {
 //   align-items: center;
 //   justify-content: center;
 //   background: #262626;
-// }
+// } */
 .speaker-title {
   text-align: center;
   position: relative;
@@ -360,11 +360,11 @@ body {
     opacity: 1;
   }
 }
-// blog hero
+/* // blog hero */
 .hero-blog {
   background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
   background-size: cover;
-  // background-color: yellow;
+  /* // background-color: yellow; */
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
@@ -390,5 +390,5 @@ body {
       display: none;
   }
 }
-// blog hero ends
+/* // blog hero ends */
 
