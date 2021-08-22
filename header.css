@@ -96,6 +96,8 @@ a.nav:hover:after {
 
 
 
+
+
 @media (max-width: 1100px) {
 
     .responsive {
@@ -140,5 +142,48 @@ a.nav:hover:after {
         width:100px;
         height: 100px; 
     }
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    /* For tablets: */
+    .responsive {
+        width: 244px;
+        height: 45px;
+    }
+    .toggle-button {
+        display: flex;
+      position: absolute;
+      top: 1.5rem;
+      right: 1rem;
+      
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 18px;
+  }
+   
+
+}
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .responsive {
+        width: 190px;
+        height: 35px;
+    }
+  .toggle-button {
+      
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+}
+ 
+
 }
 
