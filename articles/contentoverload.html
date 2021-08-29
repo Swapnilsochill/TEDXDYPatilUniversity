@@ -92,15 +92,7 @@ mark {
              0px 18px 23px rgba(0,0,0,0.1);;
 } 
 
-.wrapper{
-  padding: 100px;
-  margin: 0 0 50px 0;
-  text-align: left;
-  height: 40vh;
-  background: url('../Images/yellow\ banner\ 3.png') no-repeat center center fixed;
-  background-size: cover;
-  transition: all 0.4s ease;
-}
+
 .articleText{
   margin: 0 10% 30px 20%; 
   width: 60%;
@@ -109,6 +101,7 @@ mark {
   border-left: 1px solid #cccccc;
   transition: all 0.4s ease;
 }
+
 .introduction{
   margin-bottom: 20px;
 }
@@ -120,20 +113,7 @@ mark {
   /* background: white; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.accountInfo .header{
-  background: url('https://source.unsplash.com/V6s1cmE39XM/250x250') no-repeat;
-  height: 120px;
-  width: 100%;
-  padding: 20px 10px;
-}
-.accountInfo .profilePicture{
-  z-index: 1;
-  margin: -25px auto 10px auto;
-  background: url('https://source.unsplash.com/LyeduBb2Auk/100x100') no-repeat;
-  height: 100px;
-  width: 100px;
-  border-radius: 5px;
-}
+
 .accountInfo .profileText{
   text-align: center;
   margin-bottom: 20px;
@@ -152,22 +132,33 @@ button:hover{
   color: white;
 }
 
-
-
-@media only screen and (max-width: 1000px) {
-    /* For tablets: */
-  .articleText {
-    margin: 0 10% 30px 10%; 
-    width: 80%;
-    max-width: 800px;
-    padding-left: 0px;
-    border: 0;
-  }
+.wrapper{
+  padding: 100px;
+  margin: 0 0 50px 0;
+  text-align: left;
+  height: 40vh;
+ 
+  background-size: cover;
+  transition: all 0.4s ease;
 }
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .stageimg {
+    width: 400px;
+  }
+  
+  .wrapper {
+      background: url('../Images/mobile\ banner\ week\ 3.png');
+    }
+}
+@media only screen and (max-width: 767px) {
     /* For mobile phones: */
     .wrapper {
-      background: url("../Images/mobile\ banner\ yellow 1.png");
+      background: url("../Images/mobile\ banner\ week\ 3.png");
+      height: 30vh;
+
     }
   .articleText {
     margin: 0 5% 30px 5%; 
@@ -176,6 +167,21 @@ button:hover{
   .wrapper{
     padding: 5%;
   }
+  mark {
+    font-size: 0.8em;
+  }
+ 
+}
+@media screen and (min-width: 1024px) {
+  .wrapper{
+  padding: 100px;
+  margin: 0 0 25px 0;
+  text-align: left;
+  height: 40vh;
+  background: url('../Images/banner\ week\ 3.png') no-repeat center center fixed;
+  background-size: cover;
+  transition: all 0.4s ease;
+}
 }
 
 /* article1 ends */
@@ -255,6 +261,10 @@ blockquote small {
 	padding-right: 1.333333rem;
 }
 
+.articleText a {
+  color: #1cedca;
+}
+
 blockquote cite:last-child,
 blockquote small:last-child {
 	margin-bottom: 0;
@@ -277,8 +287,29 @@ blockquote small:last-child {
 /* blockquote ends */
 
 .belong{
-  font-size: 1.6rem;
+  font-size: 1.75rem;
 }
+
+.indent-1{
+  /* padding-left: 3em; */
+  display: block;
+}
+
+.anchor {
+  display: block;
+  height:102px;
+  margin-top:-102px;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+  .stageimg {
+    width: 300px;
+  }
+}
+
+
 
 </style>
 
@@ -307,18 +338,21 @@ blockquote small:last-child {
  </header>
 
  <main>
+   <span class="anchor"></span>
    <span class = "article1">
     <div class="article">
       <div class="wrapper">
         <div class="wrapperText">
           <h1>
-            <mark>Calling All Thinkers  </mark>
+            <mark>Attention Deficit or Content Overload?</mark>
           </h1>
+          
           <p >
-            <mark>By Kirti Agarwal</mark>
+            <mark>By Siddhi Gothivrekar</mark>
           </p><p >
-            <mark>Aug 15 2021</mark>
+            <mark>Aug 29 2021</mark>
           </p>
+
           <!-- <div id="accountDetail" class="accountInfo">
             <div class="header">
               <h2><mark>Lina Regental</mark></h2>
@@ -332,63 +366,29 @@ blockquote small:last-child {
       </div>
       <!--The Text is generated with hipsum.co :) Check it out! -->
         <div class="articleText">
-          <h5 style="font-size: 1.15rem ;">
-            <i>Can you guess a tab that’s always open on my laptop?</i> <br><br>
+         
             
-            <img src="../Images/The TEDx Content Guidelines.png" width="340px" height= "40px" alt=""><br><br>
             
-            It's huge! I must have read it a hundred times and yet, I couldn’t tell you any one rule by heart. You have the usual - 
-            Speakers must not have a commercial agenda or talk about bad science. But do you know what my favorite is?<br><br>
-            
-            <i>“Special care must be taken to avoid using polarising us vs. them language.”</i><br><br>
-            
-            It's refreshing, isn't it? <br><br>
-            
-            <i>In today’s social media age, where you are constantly surrounded by extremes in opinion relating to politics, religion, and even music taste, you can choose to spend an afternoon listening to unbiased ideas? </i><br><br>
-            
-            I regard myself as someone with an open mind who embraces contradicting opinions. But what if we’re living in bubbles created by the infamous algorithms that only expose us to thoughts we already agree with? Can you imagine the abundance we are missing out on? Not the black or white but the grey, the ‘in-between lines’ our English teachers warned us about. <br><br>
-            
-            You can always put away your phone, talk to your grandparents and go on adventures that stimulate your curiosity, intellect, and creativity. And here’s why a TEDx event is a great addition to that list: <br>
             <br>
-            You already know it's not organized to earn or for charity. So there won’t be any cringy “Buy my product” or “Join my pyramid scheme to get rich” speeches. <br><br>
-            
-            Although educational, it’s not an endless lecture, just 18mins for every speaker. <br><br>
-            
-            <i>What sets it apart though?</i> <br><br>
-            
-            A TEDx event isn’t merely a stage or a plethora of speakers and an over-enthusiastic marketing team. It aims to create a community of thinkers and doers, and so as an audience, you hold the major responsibility of spreading the ideas, the grey, and the emotions you feel once you get out of the auditorium. <br><br>
-            
-            Some might disagree and ask -<br><br>
-            
-            <i>“How will I feel as passionately about the idea as the speaker to spread it?” <br><br>
-            To answer that, I would like to tell all of you about an activity we did in school once.</i> <br><br>
-            
-            Our teacher took us out of class, onto the ground and carried with her long pieces of cloth. She divided us into pairs and then covered someone’s eyes, tied a leg to the thigh or an arm to the shoulder in a way that normal function became extremely tough. The partners then guided each other through a maze. <br><br>
-            
-            The hurdle devised by this activity sowed a seed of understanding the people around us with disabilities.<br><br>
-            
-            So to answer your question, spending an afternoon listening to speakers might not result in a personal eureka moment or an immediate passion for their idea but it will surely alter your perspective. It’ll make you ponder about the universe and its unique ways. <br><br>
-            
-            So my dear readers, welcome to the first TEDxDYPatilUniversity blog and if you relate to any of the above, your weekly contemplation is <br><br><br>
-            
-            <span class = "belong"><b><i>“Do I belong to the TEDx community?”</i></b></span> <br><br><br><br>
-            </h5>
-            <section>
-              
-              <blockquote class="blkquote-sharp" cite="https://codepen.io/killshot13">
-                <p>"I’ve attended two TEDx events that have astounded me by the depth in personality, persona, and perseverance showcased by every speaker throughout their lives and as they share their riveting stories.<br><br>
 
-                  I attended my first TEDx talk as an unsure, serotonin-deprived, tired 16-year-old, and the second; an overly stressed, buried in academic expectations, socially devoid 12th grader. <br><br>
-                  
-                  Both being important junctures in my life, I left enlightened and energized not because I knew what I was going to do after those 2 hours. But, listening to the speakers, I realized that being content, ambitious, and in control are aspects that can never be taken away from you in life, irrespective of what you’re going through. Reasons to be happy, to dream big are uncountable, and being in control comes with discipline and not independence. <br><br>
-                  
-                  Currently, I’m an overworked, impatient, and exhausted medico. I can’t wait to attend the next TEDx talk and imbibe all I can from it, and grow effectively towards my goals! I’d also love to give this opportunity of attending a TEDx conference to as many people as I can, and therefore am grateful to be a part of this event."<br><br>
-                </p>
-                <small >
-                  -Shruti Saxena, Curation Team
-                </small>
-              </blockquote>
-            </section>
+            Mehdi Ordikhani-Seyedlar, a computational neuroscientist, in his Ted talk on <a href="https://www.youtube.com/watch?v=qKJv4S5peJQ"> 'What happens when your brain pays attention?'</a> explains the responses our brain processes when it perceives two or more simultaneous activities. He elaborates that the occipital lobe in our brain takes charge of the overt attention and registers what our eyes sense. But at the same time, the frontal lobe is taking charge of the covert attention and is vigorously prohibiting our consciousness from getting diverted by blocking the signals we are receiving from the other sources in our vicinity. <br><br>
+            Attention is what you devote towards not just reading the lines but reading between and beyond the lines. Everybody wants it; children and adults alike. However, most fail to give some. In an age where new things are happening every few minutes and with each of these things pulling our attention, we compromise on the amount of time we designate to each.<br><br>
+            The art of paying attention has a lot to do with patience and patience is one trait that didn’t catch up with our accelerated anxiety and overthinking nature. The ‘fear of missing out’ (FOMO) makes more sense to us than patience today!<br><br>
+            Here’s a fun fact - You will have to live for more than 90,000 years to savor the content already available and that is, if you start watching it the second you are born! And to be honest, a lot of time is spent searching for likeable content, too. It's perfectly normal to feel like you are missing out on something because yes, you truly are. However, being fearful of this feeling is deteriorating our health, inducing mood swings and narrowing our self-esteem. <br><br>
+            Creativity, on the other hand, knows no bounds. Despite the aggressively evolving demands and constraints, this zone is buzzing more than ever with frequent new entries, be it faces, stories or productions, and is optimising the reduced attention span! Lack of patience has led to a different genre of creativity altogether. Content creation through short films (15-20 mins) or reels and TikToks (15-30 secs) has gained proven success in terms of relatability, conciseness and virality. People are directly interacting with the masses through these platforms and are having fun in the process. <br><br>
+            As digital strategist Qiuqing Tai aptly states in her TED talk about <a href="https://www.ted.com/talks/qiuqing_tai_tiktok_instagram_snapchat_and_the_rise_of_bite_sized_content?language=en">'TikTok, Instagram, Snapchat - and the rise of bite-sized content'</a> that popularity of short videos about beauty hacks, parenting tips, math tricks, business promotions and entertainment have generated millions of dollars of revenue over social media apps. McDonalds has managed to rope in thousands of ‘snaplications’ of people who were volunteering to be their employees by making a filter available to them. The soar in time efficient content quality has made such videos consumer friendly and has made communication much more diverse yet converging. <br><br>
+            Ironically, this ‘bite-sized’ content is killing more time than necessary. The amount of content getting consumed just because the video changes every 15 seconds is huge and has an impactful influence on the ideologies this generation agrees to identify and sensitize with.<br><br>
+            The average amount of hours spent on social media platforms keeps rising significantly every year. This is making all of us careworn to get our presence online validated by the masses, thereby, compelling this generation to take mental peace for granted. Consequently, it is taking a toll on our endurance levels and attention spans. The inability to focus for longer than 20 minutes is alarming. The convenience of fast-forwarding shows on OTT platforms has gotten us hooked to rushing towards the end, even in our own lives! Being fast paced is ambitious but not wanting to rest is detrimental. We must understand that we will end up unsatisfied every night and misinterpret it as a sense of being under productive, giving us more reasons to blame ourselves.<br><br>
+            <img src="../Images/comic week 3.jpeg" width="85%" height="auto"><br>Credits: Steve Kelly<br><br>
+            Belonging to the 21st century is an undenied privilege because we are given a pulpit to find ways and means to keep us occupied all the time. However, is this a privilege in the real sense? <br><br>
+            There is a desperate voice in us propelling us towards constant mutation in behaviors, expectations and emotions. It’s like being provided with all the facilities to watch 100 videos about why reading is important!<br><br>
+            We were guaranteed the right to choose long back but the liberty to exercise it openly is fairly new. We are freshly exposed to exponentially escalating choices. Our brain receives too many signals now and is being pressured to over perform. We may need some time to adjust to choosing and we do deserve a chance at dealing with this mob of mounting thoughts. <br><br>
+            We will then settle down once again and wait for something new to unsettle us. I think this sort of uncertainty gives this generation the high they keep seeking.<br><br>
+            So my dearest blog readers, your weekly contemplation is <br><br>
+            <b><h3>‘What truly deserves my attention?’</h3></b><br>
+            
+            </h5>
+          </div>
           </section>
       </div>
     </div>
