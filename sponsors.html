@@ -21,6 +21,7 @@
 <style type="text/css">
   body{
     background-color: black;
+    min-height: 100%;
   }
 	.img{
         width: 100%;
@@ -95,9 +96,98 @@
 .btn-1:active {
   top: 2px;
 }
+
+body {
+  	font-family: 'Poppins', sans-serif;
+  	font-weight: 400;
+  	font-size: 16px;
+  	line-height: 1.7;
+  	color: #eee;
+}
+
+.header {
+  	height: 100vh;
+  	background-image: 
+	  linear-gradient(to right bottom, 
+     rgba(207, 29, 17, 0.8),
+     rgba(217, 117, 111, 0.8)),
+     url('Images/sponsorbg.jpg');
+  	
+	background-size: cover;
+  	background-position: top;
+  	position: relative;
+
+  	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+  	position: absolute;
+  	top: 40px;
+  	left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.heading-primary {
+  	color: #fff;
+  	text-transform: uppercase;
+
+  	backface-visibility: hidden;
+  	margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  	display: block;
+  	font-size: 30px;
+  	font-weight: 400;
+  	letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  	display: block;
+  	font-size: 18px;
+  	font-weight: 700;
+  	letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	padding: 10px 20px;
+  	display: inline-block;
+  	border-radius: 100px;
+  	transition: all .2s;
+  	position: relative;
+}
+
+.btn:hover {
+  	transform: translateY(-3px);
+  	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  	transform: translateY(-1px);
+  	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  	background-color: #fff;
+  	color: #777;
+	font-size: 14px;
+}
+
 </style>
 
-<header>
+
    <nav class="navbar" style="position: sticky;" >
         <div class="brand-title">
         	<img src="Images/TEDxDYPatilUniversityop.png" class="responsive logo"></div>
@@ -119,10 +209,10 @@
           </ul>
         </div>
       </nav>
- </header>
 
- <main>
-   <h1 style="color: white;">Interested in sponsoring our event ?</h1>
+<div style="min-height: 60vh;">
+ 
+   <!-- <h1 class="interested" style="color: white;">Interested in sponsoring our event ?</h1>
    <a href="https://forms.gle/18B7urGW3mTGBNuC8"><button class="custom-btn btn-1">Click here</button></a>
    
    <!-- <div class="container-fluid" style="color: white;margin-top: 2%;">
@@ -132,9 +222,24 @@
       <h3>WOULD LIKE TO THANK OUR SPONSORS</h3></div>
 
       <div class="container-fluid" style="height: 1000px;" ></div> -->
- </main>
 
- <footer style="bottom: 0;" >
+
+
+  <header class="header">
+    
+    
+    <div class="text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary-main">Interested in sponsoring our event ?</span>
+        <!-- <span class="heading-primary-sub">The secondary heading</span> -->
+      </h1>
+      <a href="https://forms.gle/18B7urGW3mTGBNuC8" class="btn btn-white btn-animated">Click Here</a>
+    </div>
+  </header>
+
+
+    </div>  
+ <footer style="margin-bottom:-200px ;" >
   <div class="main-content">
     <div class="left box">
       <h2>HAVE QUERIES? ASK US</h2>
