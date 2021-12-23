@@ -140,6 +140,7 @@ input::-webkit-inner-spin-button {
         </a>
         <div class="navbar-links">
             <ul class="menu">
+                <li><a class="nav" href="index.html">HOME</a></li>
                 <li><a class="nav" href="yourweeklycontemplation">BLOG</a></li>
                 <li><a class="nav" href="aboutus">ABOUT US</a></li>
                 <!-- <li><a class="nav" href="team">THE TEAM</a></li> -->
@@ -697,6 +698,14 @@ Canvas
         </center>
     </div>
 </footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".toggle-button").click(function () {
+            $(".navbar-links").slideToggle("slow");
+        });
+    });
+</script>
 
 </body>
 </html>
