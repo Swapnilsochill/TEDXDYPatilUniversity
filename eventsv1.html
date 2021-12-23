@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEDxDYPATILUNIVERSITY</title>
+    <link rel="icon" href="X.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e015eaaae8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+      
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+</head>
+
+
+    <style type="text/css">
+         body{
+  background-color: black;
+}
+
+  textarea{
+    resize: none;
+  }
+
+ 
+
+  .form-control{
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid red;
+  }
+
+  .wrapper{
+  background: black;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.wrapper .input_field{
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .input_field input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 17px;
+  border-bottom: 1px solid red;
+}
+.input_field input:focus ~ label,
+.input_field input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: grey;
+
+}
+.wrapper .input_field label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.input_field .underline{
+  
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+ @media only screen and (min-width: 1200px) {
+  
+ }
+
+ @media only screen and (min-width: 1000px) {
+
+         .wrapper{
+       width: 100%;
+    }
+  }
+
+    .recieved {
+    background-color: red;
+    width: 300px;
+    height: 40px;
+    display: none;
+    margin-bottom: 2%;
+    color: white;
+    }
+    </style>
+
+<header>
+    <nav class="navbar" style="position: sticky;">
+        <div class="brand-title">
+            <img src="Images/TEDxDYPatilUniversityop.png" class="responsive logo">
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul class="menu">
+                <li><a class="nav" href="yourweeklycontemplation">BLOG</a></li>
+                <li><a class="nav" href="aboutus">ABOUT US</a></li>
+                <!-- <li><a class="nav" href="team">THE TEAM</a></li> -->
+                <li><a class="nav" href="speakers">SPEAKERS</a></li>
+                <li><a class="nav" href="sponsors">SPONSORS</a></li>
+                <li><a class="nav" href="theme">THEMES</a></li>
+                <li><a class="nav" href="contactus">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- <span class="seat-area">
+    <canvas id="seating" height="750px" width="1080px"
+        style="border: 1px solid rgb(236, 205, 205); background-color: white; margin-left: 50px;"></canvas>
+</span>
+
+
+Canvas 
+<script>
+    var c = document.getElementById("seating");
+    var ctx = c.getContext("2d");
+
+    // Seat A1
+    ctx.beginPath();
+    ctx.lineWidth = "6";
+    ctx.rect(30, 30, 50, 50);
+    var a1 = ctx.stroke();
+
+
+</script> -->
+
+<div class="container-fluid">
+     <!-- <text style="margin: 7vh auto auto 10vw; color: white; font-size: xx-large;">Booking Chart</text>  -->
+    <img src="Images/seating v2.png" alt="Booking Chart"  style="background-repeat: no-repeat; background-size: cover; height: auto; width: 95vw; margin: 20px auto; border: 1px solid white;">
+    <text style=" color: white; margin: 5px auto; text-align: center;">NOTE: All seats have proper distancing, conforming to COVID-19 rules. </text>
+</div>
+
+<div class="booking-area">
+<!-- Form -->
+<span class="form-area">
+<form class="gform" action="https://script.google.com/macros/s/AKfycbyqMuxAcNJa4ugPCnwNfinNxptx1zDuqv81nkAM0icDTjdH96I7NGHYqfQdMeXLya3R/exec" autocomplete="off" method="POST">
+    <!-- Name -->
+    <section class="row">
+        <div class="col">
+            <div class="wrapper">
+                <div class="input_field">
+                    <input id="Name" name="Name" type="text" required>
+                    <div class="underline"></div>
+                    <label><span style="color: whitesmoke;">Full Name</span><span style="color: red;">*</span></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact No. -->
+    <section class="row">
+        <div class="col">
+            <div class="wrapper">
+                <div class="input_field">
+                <input id="contact" name="Contact" type="text" required>
+                <div class="underline"></div>
+                <label><span style="color: whitesmoke;">Contact No.</span><span style="color: red;">*</span></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email -->
+    <section class="row">
+        <div class="col">
+            <div class="wrapper">
+                <div class="input_field">
+                    <input id="email" name="Email" type="email" required>
+                    <div class="underline"></div>
+                    <label><span style="color: whitesmoke;">Email</span><span style="color: red;">*</span></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col">
+            <div class="wrapper">
+                <label><span style="color: whitesmoke;">Type of Seat</span><span style="color: red;">*</span></label>
+                <select name="ticket" id="ticketType" onchange="getPaymentButton()" required>
+                    <option value="" selected disabled hidden>-- Select Here --</option>
+                    <option value="student">Student</option>
+                    <option value="studentVip">Student VIP</option>
+                    <option value="corporate">Corporate</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pay Now (Student)-->
+    <section class="row student-pay">
+        <div class="col">
+            <div class="wrapper">
+                <a id="buy_ticket" href="#" rel="noopener noreferrer" target="_blank">
+                <button type="submit" class="pay-now" id="rzp-button1"></button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+
+</form></span>
+<span class="card-plus-note">
+    <div class="card-area">
+        <div class="card mb-5">
+            <div class="card-title">Student Plan</div>
+            <div class="card-body">
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Goody</li>
+                </ul>
+            </div>
+            <div class="card-subtitle"><i class="fa fa-inr" aria-hidden="true"></i> 500</div>
+        </div>
+        <div class="card mb-5">
+            <div class="card-title">Student VIP Plan</div>
+            <div class="card-body"><ul>
+                <li>Breakfast</li>
+                <li>Lunch</li>
+                <li>Goodies</li>
+            </ul></div>
+            <div class="card-subtitle"><i class="fa fa-inr" aria-hidden="true"></i> 1000</div>
+        </div>
+        <div class="card mb-5">
+            <div class="card-title">Corporate Plan</div>
+            <div class="card-body"><ul>
+                <li>Breakfast</li>
+                <li>Lunch</li>
+                <li>Goodies</li>
+                <li>Meet and Greet with the Speakers (at Stadium)</li>
+            </ul>
+            </div>
+            <div class="card-subtitle"><i class="fa fa-inr" aria-hidden="true"></i> 1500</div>
+        </div>
+    </div>
+    <div class="custom-card">You will receive confirmation of booking over call and email.
+        For any queries related to booking please contact <nobr>SWAPNIL: +91 88502 16315</nobr>
+    </div>
+</span>
+</div>
+
+<!-- Select Ticket Type -->
+<script>
+    function getPaymentButton(){
+        var ticketDropdown = document.getElementById('ticketType');
+        var userInput = ticketDropdown.options[ticketDropdown.selectedIndex].value;
+
+        var studentButton = document.getElementById('rzp-button1');
+        var studentVipButton = document.getElementById('rzp-button2');
+        var corporateButton = document.getElementById('rzp-button3');
+        var payLink = document.querySelector('#buy_ticket');
+
+        // Redirect Links
+        var studentPayLink = "https://www.google.com";
+        var studentVPayLink = "https://www.facebook.com";
+        var corpPayLink = "https://www.bing.com";
+
+        if (userInput == 'student'){
+            studentButton.style.visibility = 'visible';
+            studentButton.innerHTML = "Buy Student Pass";
+            studentButton.setAttribute("onclick", "location.href = 'https://pmny.in/xIiL1ObtvmZ5'")
+        } else if (userInput == 'studentVip') {
+            studentButton.style.visibility = 'visible';
+            studentButton.innerHTML = "Buy Student VIP Pass";
+            studentButton.setAttribute("onclick", "location.href = 'https://pmny.in/CrtD6e7OuSS8'")
+        } else if (userInput == 'corporate') {
+            studentButton.style.visibility = 'visible';
+            studentButton.innerHTML = "Buy Corporate Pass";
+            studentButton.setAttribute("onclick", "location.href = 'https://pmny.in/xIWRYTZcTrJV'")
+        } else {
+            return false;
+        }
+    }
+</script>
+
+<!-- Duplicate Seat Toast -->
+<div class="top-0 end-0 p-3" style="z-index: 11; position: fixed; top: 30%; right: 0;">
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="dupeToast">
+    <div class="toast-header bg-danger text-white">
+        <strong class="me-auto">Note: Duplicate Seats selected</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="background: transparent; border: none; margin-left: 103.5px; "><i class="fa fa-times"></i></button>
+    </div>
+    <div class="toast-body">
+        You selected duplicate seats which have not been counted.
+    </div>
+</div>
+</div>
+
+<!-- Invalid Seats Toast -->
+<div class="top-0 end-0 p-3" style="z-index: 11; position: fixed; top: 30%; right: 0;">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="dupeToast">
+        <div class="toast-header bg-danger text-white">
+            <strong class="me-auto">Note: Invalid Seats selected</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"
+                style="background: transparent; border: none; margin-left: 103.5px; "><i
+                    class="fa fa-times"></i></button>
+        </div>
+        <div class="toast-body">
+            You have selected invalid seats which have not been counted. Please re-enter seats.
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function phoneValidate(inputtxt) {
+            var phoneno = /^\d{10}$/;
+            if (inputtxt.value.match(phoneno)) {
+                return true;
+            }
+            else {
+                alert("Please enter a valid phone number.");
+                return false;
+            }
+        }
+
+    
+
+    function checkDuplicate(og_array) {
+        var unique = [...new Set(og_array)];
+        var toastLiveExample = document.getElementById('dupeToast')
+
+            if (unique.length != og_array.length) {
+                console.log("Dupe seats detected")
+                var dupe_toast = new bootstrap.Toast(toastLiveExample)
+
+                dupe_toast.show()
+            } else {
+                return;
+            }
+        }
+    
+    
+
+    function countSeats(seat_names){
+        
+        // FIELD DECLARATIONS
+        var stu_number = document.getElementById("stu_number");
+        var stu_vip_number = document.getElementById("stu_vip_number");
+        var corp_number = document.getElementById("corp_number");
+
+        // clear previous calculations
+        stu_number.innerHTML = "0";
+        stu_vip_number.innerHTML = "0";
+        corp_number.innerHTML = "0";
+
+        // SPLITTING INTO ARRAY
+        var seat_array = seat_names.split("-");
+        console.log(seat_array);
+        console.log(seat_names);
+
+        // Checking and removing Duplicates
+        checkDuplicate(seat_array);    //show toast if duplicates
+        var uniqueSeats = [...new Set(seat_array)]
+
+        // SEAT DECLARATIONS
+        student_array = ["A1", "A2", "A3", "A4"];
+        studentvip_array = ["B1", "B2", "B3", "B4"];
+        corporate_array = ["C1", "C2", "C3", "C4"];
+
+        for (var i=0; i<=(uniqueSeats.length - 1) ; i++) {
+            if (student_array.includes(uniqueSeats[i])) {
+                stu_number.innerHTML = parseInt(stu_number.innerHTML) + 1;
+            }else if(studentvip_array.includes(uniqueSeats[i])) {
+                stu_vip_number.innerHTML = parseInt(stu_vip_number.innerHTML) + 1;
+            }
+            else if (corporate_array.includes(uniqueSeats[i])) {
+                corp_number.innerHTML = parseInt(corp_number.innerHTML) + 1;
+            }
+            else {
+                return;
+            }
+        }
+    }
+
+    function calculateTotal(seat_names) {
+        
+        // Run Seat Count Function
+        countSeats(seat_names);
+
+        // Cost Declaration
+        const student_price = 499;
+        const student_vip_price = 999;
+        const corporate_price = 1499;
+
+        // Get Number of seats
+        var student_count = document.getElementById('stu_number').innerHTML
+        var stu_vip_count = document.getElementById('stu_vip_number').innerHTML
+        var corp_count = document.getElementById('corp_number').innerHTML
+
+        // Cost calc
+        var stu_cost = parseInt(student_count) * 499
+        var stu_vip_cost = parseInt(stu_vip_count) * 999
+        var corp_cost = parseInt(corp_count) * 1499
+        var total_cost =  stu_cost + stu_vip_cost + corp_cost
+        console.log(stu_cost, stu_vip_cost, corp_cost, total_cost);
+
+        // Setting values in receipt
+        var student_ticket_count = document.getElementById('student-ticket-count')
+        var student_vip_ticket_count = document.getElementById('student-vip-ticket-count')
+        var corporate_ticket_count = document.getElementById('corporate-ticket-count')
+
+        var stu_field = document.getElementById('student-ticket-total')
+        var stu_vip_field = document.getElementById('student-vip-ticket-total')
+        var corp_field = document.getElementById('corporate-ticket-total')
+        var subtotal = document.getElementById('total-amount')
+
+        student_ticket_count.innerHTML = student_count
+        student_vip_ticket_count.innerHTML = stu_vip_count
+        corporate_ticket_count.innerHTML = corp_count
+
+        stu_field.innerHTML = stu_cost;
+        stu_vip_field.innerHTML = stu_vip_cost;
+        corp_field.innerHTML = corp_cost;
+        subtotal.innerHTML = total_cost;
+    }
+   
+</script>
+
+<!-- Form Style -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    form text {
+        color: white;
+        font-size: large;
+    }
+
+    label {
+        font-size: medium;
+    }
+    .divider {
+        margin-right: 25px;
+    }
+
+    .ticket-type {
+        margin-top: 10px;
+    }
+
+    .pay-now {
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: 600;
+        background-color: red;
+        width: 100%;
+        padding: 25px auto;
+        height: 40px;
+    }
+
+    .seat-area {
+        width: 100vw;
+    }
+
+    .booking-area {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20vh;
+    }
+    
+    .card-plus-note{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .custom-card {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 40px;
+        width: 95%;
+        padding: 20px 20px;
+    }
+
+    .form-area{
+        width: 40%;
+        height: 100vh;
+    }
+
+    /* Card CSS */
+    .card-area {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: max-content;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .card {
+        width: 30%;
+        padding: 30px 30px;
+        box-shadow: 5px 5px red;
+        height: 55vh;
+    }
+    .card-title {
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+    }
+    .card-subtitle {
+        margin-top: 10px;
+        font-size: xx-large;
+        text-align: right;
+        font-weight: normal;
+        font-family: "Roboto", sans-serif;
+    }
+    .card-body{
+        
+    }
+    .card-total{
+        width: 100%;
+    }
+
+    /* Toast */
+    .btn-close:active {
+        border: none;
+        background: transparent;
+    }
+    #ticketType {
+        width: 100%;
+        height: 5vh;
+        background-color: black;
+        color: white;
+    }
+
+    #rzp-button1, #rzp-button2, #rzp-button3 {
+        visibility: hidden;
+        z-index: 1000;
+        width: 100%;
+    }
+    
+    
+    @media only screen and (max-width: 768px){
+        .booking-area {
+            flex-direction: column-reverse;
+        }
+        .form-area{
+        width: 100%;
+        height: 100vh;
+        }
+        .card-area{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card {
+            width: 100%;
+            padding: 15px 15px;
+        }
+        .card-title{
+            padding: auto;
+        }
+        .card-subtitle{
+            
+        }
+    }
+</style>
+
+<footer style="bottom: 0;">
+    <div class="main-content">
+        <div class="left box">
+            <h2>HAVE QUERIES? ASK US</h2>
+            <div class="content">
+
+                <p>Sneha Goon (Marketing) - +91 98923 40390</p>
+                <p>Afraz Kazi (Partnerships) - +91 84509 23743</p>
+
+            </div>
+        </div>
+
+        <div class="center box">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <!-- <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Sector 7, D Y Patil University, Nerul, Navi Mumbai 400706</span> -->
+                    <table>
+                        <tr>
+                            <td rowspan=2> <span class="fas fa-map-marker-alt"></span></td>
+                            <td><span class="text">Sector 7, D Y Patil University,</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="text">Nerul, Navi Mumbai 400706</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="phone">
+                    <table>
+                        <tr>
+                            <td rowspan=2> <span class="fas fa-phone-alt"></span></td>
+                            <td><span class="text">IT Department,</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="text">DY Patil University: +91 7276880013</span></td>
+                        </tr>
+                    </table>
+                    <!-- <span class="fas fa-phone-alt"></span>
+          <span class="text">IT Department, DY Patil University: +91 7276880013</span> -->
+                </div>
+                <div class="email">
+                    <table>
+                        <tr>
+                            <td rowspan=2> <span class="fas fa-envelope"></span></td>
+                            <td><span class="text">info.tedx@dypatil.edu</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="text">partnerships.tedx@dypatil.edu</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="right box">
+            <h2>SOCIAL MEDIA</h2>
+            <div class="content">
+                <div class="social">
+                    <a href="https://www.facebook.com/268666783613875/"><span class="fab fa-facebook-f"
+                            style="color:white"></span></a>
+                    <a href="https://twitter.com/TEDxDYPatil?s=08"><span class="fab fa-twitter"
+                            style="color:white"></span></a>
+                    <a href="https://instagram.com/tedxdypatiluniversity?igshid=13hkv6yb1uaak"><span
+                            class="fab fa-instagram" style="color:white"></span></a>
+                    <a href="https://www.youtube.com/results?search_query=tedx+dy+patil+university"><span
+                            class="fab fa-youtube" style="color:white"></span></a>
+                    <a href="https://www.linkedin.com/company/tedxdypatiluniversity"><span class="fab fa-linkedin-in"
+                            style="color:white"></span></a>
+                    <a href="https://discord.gg/CfMhHFkJ7Z"><span class="fab fa-discord" style="color:white"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <center>
+            <span class="credit">This independent TEDx event is operated under a license from TED. | </span>
+            <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+        </center>
+    </div>
+</footer>
+
+</body>
+</html>
